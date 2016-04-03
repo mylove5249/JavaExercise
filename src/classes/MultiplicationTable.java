@@ -19,7 +19,7 @@ public class MultiplicationTable {
     int getNumber() { return number; }
 
     boolean setMaxNumber(int max_num) {
-        if (9 <= max_num && max_num <= 9) {
+        if (9 <= max_num && max_num <= 19) {
             max_number = max_num;
             return true;
         } else {
@@ -38,12 +38,13 @@ public class MultiplicationTable {
     public static void main(String[] args) {
         MultiplicationTable mtable = new MultiplicationTable();
 
-        mtable.max_number = 9; // BAD practice!
+        mtable.max_number = 9;
         mtable.setMaxNumber(9);
-    for (int j=2;j<10;j++) {
+    for(int j=2; j<10; j++) {
         mtable.setNumber(j);
         mtable.printTable();
         System.out.println(" ");
     }
     }
+
 }
