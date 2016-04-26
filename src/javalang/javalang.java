@@ -27,25 +27,25 @@ public class javalang {
             StringBuffer KrDay = new StringBuffer(year + "년 " + month + "월 " + day + "일 ");
             switch(week) {
                 case Calendar.SUNDAY:
-                    System.out.print("일요일");
+                    KrDay.append("일요일");
                     break;
                 case Calendar.MONDAY:
-                    System.out.print("월요일");
+                    KrDay.append("월요일");
                     break;
                 case Calendar.TUESDAY:
-                    System.out.print("화요일");
+                    KrDay.append("화요일");
                     break;
                 case Calendar.WEDNESDAY:
-                    System.out.print("수요일");
+                    KrDay.append("수요일");
                     break;
                 case Calendar.THURSDAY:
-                    System.out.print("목요일");
+                    KrDay.append("목요일");
                     break;
                 case Calendar.FRIDAY:
-                    System.out.print("금요일");
+                    KrDay.append("금요일");
                     break;
                 case Calendar.SATURDAY:
-                    System.out.print("토요일");
+                    KrDay.append("토요일");
                     break;
             }
             KrDay.append(" " + hour + "시 " + min + "분");
@@ -55,25 +55,25 @@ public class javalang {
             StringBuffer EnDay = new StringBuffer(day + "-" + month + "-" + year + " ");
             switch(week) {
                 case Calendar.SUNDAY:
-                    System.out.print("Sun.");
+                    EnDay.append("Sun.");
                     break;
                 case Calendar.MONDAY:
-                    System.out.print("Mon.");
+                    EnDay.append("Mon.");
                     break;
                 case Calendar.TUESDAY:
-                    System.out.print("Tue.");
+                    EnDay.append("Tue.");
                     break;
                 case Calendar.WEDNESDAY:
-                    System.out.print("Wed.");
+                    EnDay.append("Wed.");
                     break;
                 case Calendar.THURSDAY:
-                    System.out.print("Thu.");
+                    EnDay.append("Thu.");
                     break;
                 case Calendar.FRIDAY:
-                    System.out.print("Fri.");
+                    EnDay.append("Fri.");
                     break;
                 case Calendar.SATURDAY:
-                    System.out.print("Sat.");
+                    EnDay.append("Sat.");
                     break;
             }
             EnDay.append(" " + hour + ":" + min);
